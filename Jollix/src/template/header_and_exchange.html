@@ -1,61 +1,177 @@
 <header>
   <div class="upper-bar">
-    <div class="logo"></div>
-    <div class="tools">
-      <div class="tools-lang"></div>
-      <div class="tools-support"></div>
-      <div class="tools-settings"></div>
-      <div class="tools-exit"></div>
+    <div class="logo"><a href="#"><img src="img/logo_1.svg" alt="" /></a></div>
+    <div class="tools"> <!-- block is hidden in mobile version -->
+      <div class="tools-lang">
+        <ul class="langs">
+          <li class="langs_option ru"><a href="#"><span>RU</span><img src="img/arrow_down.png" alt=""></a></li>
+          <li class="langs_option eng"><a href="#">ENG</a></li>
+        </ul>
+      </div>
+      <div class="tools-support">
+        <ul class="tools_support_list">
+          <li class="tools_support_item"><a href="#"><span>ПОДДЕРЖКА</span><img src="img/arrow_down.png" alt=""></a>
+            <ul class="tools_support_sublist">
+              <li class="tools_support_subitem"><a href="#">ВОПРОС/ОТВЕТ</a></li>
+              <li class="tools_support_subitem"><a href="#">ИНСТРУКЦИЯ</a></li>
+              <li class="tools_support_subitem"><a href="#">ТИКЕТЫ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="tools-settings"><img src="img/settings_icon.png" alt="" class="settings_image" /><img src="img/arrow_down.png" alt="" class="settings_arrow"></div>
+    </div>
+    <div class="enter-exit">
+      <form action="GET" class="enter-exit_buttons">
+        <button class="enter_button">ВХОД <span class="enter_arrow"></span></button>
+        <button class="exit_button_desktop">ВЫХОД<img src="img/arrow.png" alt=""></button>
+      </form>
     </div>
   </div>
-  <nav class="menu">
+  <img src="img/border_desktop.png" alt="" class="border_desktop">
+  <nav class="menu_mobile">
+    <input type="checkbox" id="hmb" class="hidden-menu-button">
+    <label class="btn-menu" for="hmb">
+      <span class="first humburger"></span>
+      <span class="second humburger"></span>
+      <span class="third humburger"></span>
+      <span class="back">НАЗАД</span>
+    </label>
+    <ul class="menu_mobile_hidden">
+      <li class="menu_moblie_item">
+        <ul class="menu_lang">
+          <li class ="lang_border up"><img src="img/img_border.png" alt="" /></li>
+          <li class="menu_lang_prefer ru"><img src="img/ru_icon.png" alt="">RU</li>
+          <li class="menu_lang_prefer en"><img src="img/eng_icon.png" alt="">EN</li>
+          <li class ="lang_border down"><img src="img/img_border.png" alt="" /></li>
+        </ul>
+      </li>
+      <li class="menu_mobile_item height"><img src="img/exchange_mob.png" alt=""><a href="#">ОБМЕН ВАЛЮТ</a>
+        <ul class="currency_variants_mob">
+          <li class="variants"><a href="#">Курсы валют</a></li>
+          <li class="variants"><a href="#">Партнерство</a></li>
+          <li class="variants"><a href="#">Бонусы</a></li>
+        </ul>
+      </li>
+      <li class ="lang_border up"><img src="img/img_border.png" alt="" /></li>
+      <li class="menu_mobile_item other_item"><a href="#"><img src="img/deal_ensure_mob.png" alt="" /><span>ГАРАНТИЯ СДЕЛОК</span></a></li>
+      <li class ="lang_border up"><img src="img/img_border.png" alt="" /></li>
+      <li class="menu_mobile_item other_item"><a href="#"><img src="img/service_payment_mob_1.png" alt=""><span>ОПЛАТА СЕРВИСОВ</span></a></li>
+      <li class ="lang_border up"><img src="img/img_border.png" alt="" /></li>
+      <li class="menu_mobile_item other_item"><a href="#"><img src="img/lombard_mob.png" alt="" /><span>ОНЛАЙН ЛОМБАРД</span></a></li>
+      <li class ="lang_border up"><img src="img/img_border.png" alt="" /></li>
+      <li class="menu_mobile_item other_item"><a href="#"><img src="img/knowledge_base_mob.png" alt="" /><span>БАЗА ЗНАНИЙ</span></a></li>
+      <li class ="lang_border up"><img src="img/img_border.png" alt="" /></li>
+      <li class="menu_mobile_settings"><a href="#">НАСТРОЙКИ <span class="arrow_mob">></span></a></li>
+      <li class="menu_mobile_settings"><a href="#">ПОДДЕРЖКА <span class="arrow_mob">></span></a></li>
+      <li class="menu_mobile_settings">
+        <form action="GET" class="exit_button">
+          <button type="button" name="button">
+            ВЫХОД<span class="arrow_mob">></span>
+          </button>
+        </form>
+        </li>
+    </ul>
+  </nav>
+  <nav class="menu-desktop">
     <ul class="menu-bar">
-      <li class="menu-bar_item"><a href="#"><img src="" alt="" /><p>
-
-      </p></a></li>
-      <li class="menu-bar_item"><a href="#"><img src="" alt="" /><p>
-
-      </p></a></li>
-      <li class="menu-bar_item"><a href="#"><img src="" alt="" /><p>
-
-      </p></a></li>
-      <li class="menu-bar_item"><a href="#"><img src="" alt="" /><p>
-
-      </p></a></li>
-      <li class="menu-bar_item"><a href="#"><img src="" alt="" /><p>
-
-      </p></a></li>
+      <li class="menu-bar_item"><a href="#"><img src="img/exchange.png" alt="" /><p>
+ОБМЕН ВАЛЮТ
+      </p><p><img src="img/border_.png" alt=""/></p></a></li>
+      <li class="menu-bar_item"><a href="#"><img src="img/deal_ensure.png" alt="" /><p>
+ГАРАНТ СДЕЛОК
+      </p><p><img src="img/border_.png" alt=""/></p></a></li>
+      <li class="menu-bar_item"><a href="#"><img src="img/service_payment.png" alt="" /><p>
+ОПЛАТА СЕРВИСОВ
+      </p><p><img src="img/border_.png" alt=""/></p></a></li>
+      <li class="menu-bar_item"><a href="#"><img src="img/lombard.png" alt="" /><p>
+ОНЛАЙН ЛОМБАРД
+      </p><p><img src="img/border_.png" alt=""/></p></a></li>
+      <li class="menu-bar_item"><a href="#"><img src="img/knowledge_base.png" alt="" /><p>
+БАЗА ЗНАНИЙ
+      </p><p><img src="img/border_.png" alt=""/></p></a></li>
     </ul>
   </nav>
   <section class="currency_exch">
+    <img class ="lang_border" src="img/img_border.png" alt="" />
     <h2 class="currency_heading">Автоматический обмен электронных валют</h2>
-    <form action="">
-      <ul class="currency_select">
-        <li class="currency_select_item">
-          <input type="text" placeholder="0,00......">
-          <select class="currency-bank giver" name="">
-          </select>
-          <select class="currency" name="">
-          </select>
-        </li>
-        <li class="currency_select_item" name="">
-          <input type="text" placeholder="0,00......">
-          <select class="currency-bank receiver" name="">
-          </select>
-          <select class="currency" name="">
-          </select>
-        </li>
-        <li class="currency_select_item">
-          <button type="" name="Обменять валюту"></button>
-        </li>
-      </ul>
-    </form>
-    <div class="currency_privat">Приват 24 доступно для обмена 114,09 UAH</div>
-    <div class="currency_in_need">Мне нужно больше - сообщите, когда появится</div>
+    <img class = "currency_exch_border_upper" src="img/currency_exch_border_upper.png" alt="">
+    <form action="POST" class="currency_exchage_options">
+      <div class="giver">
+          <div class="give">
+            <span class="give_out">отдаете</span>
+            <input type="text" placeholder="0,00........">
+          </div>
+          <div class="currency_givers">
+            <p class="current_default_choice"><a href=""><img src="img/pm_icon.png" alt=""><img src="img/arrow_expand.png" alt="" /></a></p>
+            <ul class="currency_giver_list">
+              <li class="currency_giver_option"><a href="#"><img src="img/pm_icon.png" alt=""><p>Perfect money</p></a></li>
+              <li class="currency_giver_option option_for_desktop"><a href="#"><img src="img/yandex_m_icon.png" alt=""><p>Яндекс.Деньги</p></a></li>
+              <li class="currency_giver_option paymer"><a href="#"><img src="img/paymer_icon.png" alt=""><p>Paymer</p></a></li>
+              <li class="currency_giver_option"><a href="#"><img src="img/btc_icon.png" alt=""><p>BTC-e</p></a></li>
+              <li class="currency_giver_option option_for_desktop"><a href="#"><img src="img/qiwi_icon.png" alt=""><p>Qiwi</p></a></li>
+              <li class="currency_giver_option"><a href="#"><img src="img/privat24_icon.png" alt=""><p>Приват 24</p></a></li>
+              <li class="currency_giver_option"><a href="#"><img src="img/okpay_icon.png" alt=""><p>Okpay</p></a></li>
+              <li class="currency_giver_option option_for_desktop"><a href="#"><img src="img/egopay_icon.png" alt=""><p>Egopay</p></a></li>
+              <li class="currency_giver_option"><a href="#"><img src="img/z_icon.png" alt=""><p>Z-payment</p></a></li>
+              <li class="currency_giver_option option_for_desktop"><a href="#"><img src="img/w1_icon.png" alt=""><p>W1</p></a></li>
+              <li class="currency_giver_option option_for_desktop"><a href="#"><img src="img/visa_mc_icon.png" alt=""><p>Visa/MC</p></a></li>
+              <li class="currency_giver_option option_for_desktop"><a href="#"><img src="img/anycash_icon.png" alt=""><p>Anycash</p></a></li>
+            </ul>
+          </div>
+          <div class="currency_type_list">
+            <ul class="currency_type">
+              <li class="currency_type_name usd"><a href="#"><span>USD</span><img class="currency_type_expander" src="img/arrow_expand.png" alt="" /></a></li>
+              <li class="currency_type_name uah"><a href="#">UAH</a></li>
+              <li class="currency_type_name rub"><a href="#">RUB</a></li>
+            </ul>
+          </div>
+          <span class="border_bottom_elem"></span>
+        </div>
+        <div class="receiver">
+          <div class="receive">
+            <span class="reception">получаете</span>
+            <input type="text" placeholder="0,00........">
+          </div>
+          <div class="currency_receivers">
+            <p class="current_default_choice"><a href=""><img src="img/privat.png" alt=""><img src="img/arrow_expand.png" alt="" /></a></p>
+            <ul class="currency_receiver_list">
+              <li class="currency_receiver_option"><a href="#"><img src="img/pm_icon.png" alt="">Perfect money</a></li>
+              <li class="currency_receiver_option"><a href="#"><img src="img/yandex_m_icon.png" alt="">Яндекс.Деньги</a></li>
+              <li class="currency_receiver_option"><a href="#"><img src="img/paymer_icon.png" alt="">Paymer</a></li>
+              <li class="currency_receiver_option"><a href="#"><img src="img/btc_icon.png" alt="">BTC-e</a></li>
+              <li class="currency_receiver_option"><a href="#"><img src="img/qiwi_icon.png" alt="">Qiwi</a></li>
+              <li class="currency_receiver_option"><a href="#"><img src="img/privat24_icon.png" alt="">Приват 24</a></li>
+              <li class="currency_receiver_option"><a href="#"><img src="img/okpay_icon.png" alt="">Okpay</a></li>
+              <li class="currency_receiver_option"><a href="#"><img src="img/egopay_icon.png" alt="">Egopay</a></li>
+              <li class="currency_receiver_option"><a href="#"><img src="img/z_icon.png" alt="">Z-payment</a></li>
+              <li class="currency_receiver_option"><a href="#"><img src="img/w1_icon.png" alt="">W1</a></li>
+              <li class="currency_receiver_option"><a href="#"><img src="img/visa_mc_icon.png" alt="">Visa/MC</a></li>
+              <li class="currency_receiver_option"><a href="#"><img src="img/anycash_icon.png" alt="">Anycash</a></li>
+            </ul>
+          </div>
+          <div class="currency_type_list">
+            <ul class="currency_type">
+              <li class="currency_type_name usd"><a href="#">USD<img src="img/arrow_expand.png" alt="" /></a></li>
+              <li class="currency_type_name uah"><a href="#">UAH</a></li>
+              <li class="currency_type_name rub"><a href="#">RUB</a></li>
+            </ul>
+          </div>
+          <span class="border_bottom_elem"></span>
+        </div>
+        <div class="exchange_button">
+          <button type="button">ОБМЕНЯТЬ ВАЛЮТУ</button>
+        </div>
+  </form>
+    <div class="currency_privat"><img src="img/privat.png" alt=""><span class="privat">Приват 24</span><br> доступно для обмена <span class="currency_available">114,09 UAH</span></div>
+    <div class="separator">---------------</div>
+    <div class="currency_in_need"><a href="#">Мне нужно больше - сообщите, когда появится<img src="img/envelope.png" alt=""></a></div>
   </section>
   <div class="bonuses-partners">
-    <div class="currency_rates"></div>
-    <div class="partners"></div>
-    <div class="bonuses"></div>
+    <div class="partners_line"><img src="img/partners_line.png" alt=""></div>
+    <div class="currency_rates"><a href="#"><img src="img/exchange_rate.png" alt="">КУРСЫ ВАЛЮТ</a></div>
+    <div class="partners"><a href="#"> <img src="img/partners.png" alt="">ПАРТНЕРСТВО</a></div>
+    <div class="bonuses"><a href="#"><img src="img/bonuses.png" alt="">БОНУСЫ</a></div>
   </div>
+  <img class = "currency_exch_border_bottom" src="img/currency_exch_border_bottom.png" alt="">
 </header>

@@ -1,0 +1,699 @@
+@media screen and (min-width: 1040px) {
+  .wrapper {
+    width: 1040px;
+    margin: $centralize;
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      margin: 0;
+      padding: 0;
+    }
+    .menu_mobile {
+      display: none;
+    }
+    .upper-bar {
+      height: 68px;
+      .logo {
+        width: 140px;
+        height: 32px;
+        float: left;
+        margin: 6px 0 0 39px;
+      }
+      .tools {
+        display: inline-block;
+        float: right;
+        width: 300px;
+        margin: 6px 150px 0 0;
+        .tools-lang {
+          float: left;
+          width: 65px;
+          .langs {
+            display: block;
+            width: 65px;
+            height: 30px;
+            border: 1px solid $grey2;
+            & .eng {
+              display: none;
+            }
+            a {
+              display: block;
+              margin-top: 6px;
+              color: $grey1;
+              span {
+                display: block;
+                float: left;
+                width: 20px;
+                margin-left: 10px;
+              }
+              img {
+                float: left;
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+        .tools-support {
+          float: left;
+          width: 140px;
+          height: 30px;
+          margin: 0 15px;
+          font-weight: bold;
+          border: 1px solid $grey2;
+          .tools_support_item {
+            position: relative;
+            height: 30px;
+            span {
+              position: absolute;
+              top: 5px;
+              left: 10px;
+            }
+            img {
+              position: absolute;
+              top: 8px;
+              left: 110px;
+            }
+            .tools_support_sublist {
+              display: none;
+            }
+            &:hover {
+              .tools_support_sublist {
+                display: block;
+                width: 140px;
+                position: absolute;
+                top: 25px;
+                left: -1px;
+                border: 1px solid $grey2;
+                border-top: none;
+                background-color: $white;
+                .tools_support_subitem {
+                text-align: justify;
+                text-indent: 10px;
+                }
+                a {
+                  color: $grey2;
+                  font-weight: normal;
+                }
+                .tools_support_subitem:hover {
+                  width: 100%;
+                  background-color: $blue3;
+                  a {
+                    color: $white;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .tools-settings {
+          float: left;
+          width: 60px;
+          height: 30px;
+          border: 1px solid $grey2;
+          position: relative;
+          .settings_image {
+            position: absolute;
+            top: 5px;
+            left: 10px;
+          }
+          .settings_arrow {
+            position: absolute;
+            top: 7px;
+            left: 35px;
+          }
+        }
+      }
+    }
+    .enter-exit {
+      float: right;
+      position: relative;
+    }
+    .enter_button {
+      display: none;
+    }
+    .exit_button_desktop {
+      display: block;
+      width: 100px;
+      height: 32px;
+      background-color: $white;
+      border: none;
+      color: $grey2;
+      font-size: 14px;
+      font-weight: bold;
+      position: absolute;
+      top: 6px;
+      left: 312px;
+      border: 1px solid $grey2;
+      img {
+        margin-left: 10px;
+      }
+    }
+    .border_desktop {
+      display: block;
+      width: 1024;
+      margin: $centralize;
+    }
+    .menu_mobile {
+      display: none;
+    }
+    .menu-desktop {
+      width: 960px;
+      display: inline-block;
+      .menu-bar {
+        display: block;
+        width: 900px;
+        margin: 0 55px;
+        .menu-bar_item {
+          display: inline-block;
+          margin: 40px 25px;
+          text-align: center;
+        }
+      }
+    }
+    .currency_exch {
+      width: 987px;
+      height: 400px;
+      margin: $centralize;
+      background-image: url('../img/currency_exch_border.png');
+      background-size: auto;
+      .lang_border {
+        display: none;
+      }
+      .currency_exch_border_upper {
+        display: none;
+      }
+      .currency_exchage_options {
+        display: block;
+        width: 960px;
+        margin: $centralize;
+        .giver,
+        .receiver,
+        .exchange_button {
+          width: 320px;
+          height: 80px;
+          display: inline-block;
+          border: 1px solid $blue2;
+          margin-right: -5px;
+        }
+        .giver {
+          .currency_type {
+            display: block;
+            margin-top: 19px;
+          }
+        }
+        .receiver {
+          .currency_type .usd {
+            display: block;
+            margin: 19px 0 0 210px;
+        }
+          .receive {
+            margin-left: 20px;
+          }
+          .currency_receivers {
+            left: 110px;
+          }
+        }
+        .exchange_button {
+          button {
+            top: 30px;
+          }
+        }
+        .currency_givers:hover {
+          border: 1px solid $blue2;
+          .currency_giver_list {
+            display: block;
+            width: 450px;
+            border: 1px solid $blue2;
+            .currency_giver_option {
+              width: 148px;
+            }
+            .option_for_desktop {
+              display: block;
+            }
+          }
+        }
+        .border_bottom_elem {
+          top: 30px;
+          left: 310px;
+          -webkit-transform: rotate(-135deg);
+          -ms-transform: rotate(-135deg);
+          -moz-transform: rotate(-135deg);
+        }
+      }
+      .currency_privat {
+        display: block;
+        width: 350px;
+        img {
+          left: 25px;
+        }
+      }
+      .separator {
+        width: 100px;
+        margin: -20px auto;
+      }
+      .currency_in_need {
+        float: right;
+        position: relative;
+        margin-top: 0px;
+        margin-right: 50px;
+        img {
+          width: 25px;
+          height: 25px;
+          position: absolute;
+          top: 0;
+          left: 340px;
+        }
+      }
+
+    }
+    .currency_exch_border_bottom {
+      display: none;
+    }
+    .bonuses-partners {
+      display: inline-block;
+      position: relative;
+      .partners_line {
+        width: 1040px;
+        margin: 40px auto;
+        img {
+          width: inherit;
+        }
+      }
+      .currency_rates {
+        width: 230px;
+        position: absolute;
+        top: 28px;
+        left: 60px;
+        background-color: $white;
+        text-align: center;
+        img {
+          display: inline-block;
+          margin-top: 5px;
+        }
+      }
+      .partners {
+        width: 230px;
+        position: absolute;
+        top: 28px;
+        left: 370px;
+        text-align: center;
+        background-color: $white;
+        img {
+          display: inline-block;
+          margin-top: 8px;
+        }
+      }
+      .bonuses {
+        width: 230px;
+        position: absolute;
+        top: 28px;
+        left: 670px;
+        text-align: center;
+        background-color: $white;
+        img {
+          display: inline-block;
+          margin-top: 5px;
+        }
+      }
+    }
+    .news_and_knowledge {
+      &::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      & h3 {
+        font-size: 14px;
+        font-weight: bolder;
+      }
+      .news {
+        display: inline-block;
+        float: left;
+        width: 459px;
+        height: 259px;
+        margin-left: 30px;
+        padding-left: 5px;
+        background-image: url('../img/news_border.png');
+        background-size: cover;
+        .news_cover {
+          float: left;
+          margin-left: 20px;
+          margin-right: 10px;
+        }
+        .news_text {
+          display: inline;
+          font-size: 14px;
+          margin-right: 30px;
+        }
+        .arrow {
+          top: 120px;
+          background-color: $white;
+        }
+        .left {
+          left: -15px;
+        }
+        .right {
+          left: 442px;
+        }
+      }
+      .knowledge {
+        display: inline-block;
+        float: right;
+        width: 460px;
+        height: 259px;
+        margin-top: 50px;
+        margin-right: 30px;
+        background-image: url('../img/news_border.png');
+        background-size: cover;
+        .knowledge_cover {
+          margin-left: 20px;
+          margin-right: 10px;
+        }
+      }
+      .news_border_heading,
+      .knowledge_border_heading {
+        display: none;
+      }
+      .more {
+        width: 100px;
+        height: 30px;
+        border: none;
+        color: $grey1;
+        font-size: 14px;
+        float: right;
+        margin-top: 0;
+        margin-right: 30px;
+      }
+    }
+
+    .exchange_direction {
+      margin-top: 50px;
+      height: 400px;
+      position: relative;
+      .exch_dir_heading_2,
+      .direction_border_upper {
+        display: none;
+      }
+      .exch_dir_heading_desk {
+        display: block;
+        width: 390px;
+        color: $grey1;
+        font-size: 20px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        text-align: center;
+        background-color: $white;
+        position: absolute;
+        top: -18px;
+        left: 330px;
+      }
+      .directions_list{
+        display: block;
+        position: relative;
+        li {
+          position: absolute;
+        }
+        a {
+          color: #8d8d8d;
+        }
+      }
+        .w1 {
+          top: -360px;
+          left: -48px;
+          a {
+            font-size: 20px;
+          }
+          &:hover {
+            a {
+              color: #000;
+            }
+            span {
+              color: red;
+            }
+          }
+        }
+        .perfect_m {
+          top: -310px;
+          left: -290px;
+          a {
+            font-size: 36px;
+          }
+          &:hover {
+            a {
+              color: red;
+            }
+          }
+        }
+        .btc-e {
+          top: -220px;
+          left: -290px;
+          a{
+            font-size: 20px;
+          }
+          &:hover {
+            a {
+              color: #5963bb;
+            }
+          }
+        }
+        .exmo {
+          top: -160px;
+          left: -165px;
+          a {
+            font-size: 24px;
+          }
+          &:hover {
+            a {
+              color: #45b8ff;
+            }
+          }
+        }
+        .payeer {
+          top: -105px;
+          left: -265px;
+          a {
+            font-size: 32px;
+          }
+          &:hover {
+            a {
+              color: #3498db;
+            }
+          }
+        }
+        .litecoin {
+          top: -352px;
+          left: 55px;
+          a {
+            font-size: 24px;
+          }
+          &:hover {
+            a {
+              color: #666;
+            }
+          }
+        }
+        .qiwi {
+          top: -305px;
+          left: 195px;
+          a {
+            font-size: 32px;
+          }
+          &:hover {
+            a {
+              color: #f68f1e;
+            }
+          }
+        }
+        .paymer {
+          top: -250px;
+          left: 25px;
+          a {
+            font-size: 36px;
+          }
+          &:hover {
+            a {
+              color: #006ab4;
+            }
+          }
+        }
+        .bitcoin {
+          top: -190px;
+          left: 170px;
+          a {
+            font-size: 28px;
+          }
+          &:hover {
+            a {
+              color: #f68f1e;
+            }
+          }
+        }
+        .yandex_m {
+          top: -130px;
+          left: 5px;
+          a {
+            font-size: 24px;
+          }
+          &:hover {
+            a {
+              color: #dd571b;
+            }
+          }
+        }
+        .adv_cash {
+          top: -350px;
+          left: 440px;
+          a {
+            font-size: 24px;
+          }
+          &:hover {
+            a {
+              color: #46d3a4;
+            }
+          }
+        }
+        .privat_bank {
+          top: -290px;
+          left: 370px;
+          a {
+            width: 70px;
+            font-size: 20px;
+          }
+          &:hover {
+            a {
+              color: #0b8e36;
+            }
+            span {
+              color: #000;
+            }
+          }
+        }
+        .ok_pay {
+          top: -218px;
+          left: 500px;
+          a {
+            display: block;
+            width: 90px;
+            font-size: 20px;
+          }
+          &:hover {
+            a {
+              color: #DD571b;
+            }
+          }
+        }
+        .web_money {
+          top: -145px;
+          left: 410px;
+          a {
+            font-size: 28px;
+          }
+          &:hover {
+            a {
+              color: #006ab4;
+            }
+          }
+        }
+      .directions_map {
+          display: block;
+      }
+      .direction_border_bottom {
+        display: none;
+      }
+    }
+
+    .how_it_works {
+      width: 1040px;
+      height: 547px;
+      margin-bottom: 80px;
+      .how_it_works_heading {
+        font-size: 16px;
+        font-weight: bolder;
+        display: block;
+        margin-left: 360px;
+      }
+      .how_container {
+        margin: 0 auto;
+        width: 985px;
+        height: 547px;
+        background-image: url('../img/how-border.png');
+        background-size: cover;
+        .how_paragraph {
+          display: inline-block;
+          width: 49%;
+          p {
+            font-size: 14px;
+            width: 435px;
+            margin: 10px 25px;
+          }
+        }
+      }
+      .how_border_bottom {
+        display: none;
+      }
+    }
+    .share_us {
+      display: none;
+    }
+    .tell_about_us {
+      color: $grey1;
+      font-size: 16px;
+      font-weight: bold;
+      display: block;
+      text-align: center;
+      margin: 50px auto;
+      span {
+        margin: 0 15px;
+      }
+    }
+    footer {
+      position: relative;
+      height: 250px;
+      .footer_border {
+        position: absolute;
+        top: 0;
+        left: 10px;
+      }
+      .menu-footer-mob {
+        display: none;
+      }
+      .menu-footer-desktop {
+        display: block;
+        width: 965px;
+        margin: 0 auto;
+        a {
+          color: $grey2;
+        }
+        .menu-footer_list {
+          display: inline-block;
+          width: 13%;
+          margin: 10px;
+          position: relative;
+          img {
+            margin-left: 20px;
+          }
+          .submenu-footer {
+            text-align: center;
+            padding-right: 60px;
+            position: absolute;
+            top: 30px;
+            left: -35px;
+            .submenu-footer_list {
+              margin: 10px;
+            }
+            a {
+              font-size: 10px;
+              display: block;
+              width: 150px;
+            }
+          }
+          .footer-networks {
+            left: -22px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

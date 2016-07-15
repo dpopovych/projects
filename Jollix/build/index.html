@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>AnyCash</title>
+  <link rel="stylesheet" href="css/main.css" media="screen" title="no title">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="upper-bar">
+        <div class="logo"><a href="#"><img src="img/logo_1.svg" alt="" /></a></div>
+        <div class="tools"> <!-- block is hidden in mobile version -->
+          <div class="tools-lang">
+            <ul class="langs">
+              <li class="langs_option ru"><a href="#"><span>RU</span><img src="img/arrow_down.png" alt=""></a></li>
+              <li class="langs_option eng"><a href="#">ENG</a></li>
+            </ul>
+          </div>
+          <div class="tools-support">
+            <ul class="tools_support_list">
+              <li class="tools_support_item"><a href="#"><span>ПОДДЕРЖКА</span><img src="img/arrow_down.png" alt=""></a>
+                <ul class="tools_support_sublist">
+                  <li class="tools_support_subitem"><a href="#">ВОПРОС/ОТВЕТ</a></li>
+                  <li class="tools_support_subitem"><a href="#">ИНСТРУКЦИЯ</a></li>
+                  <li class="tools_support_subitem"><a href="#">ТИКЕТЫ</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="tools-settings"><img src="img/settings_icon.png" alt="" class="settings_image" /><img src="img/arrow_down.png" alt="" class="settings_arrow"></div>
+        </div>
+        <div class="enter-exit">
+          <form action="GET" class="enter-exit_buttons">
+            <button class="enter_button">ВХОД <span class="enter_arrow"></span></button>
+            <button class="exit_button_desktop">ВЫХОД<img src="img/arrow.png" alt=""></button>
+          </form>
+        </div>
+      </div>
+      <img src="img/border_desktop.png" alt="" class="border_desktop">
+      <nav class="menu_mobile">
+        <input type="checkbox" id="hmb" class="hidden-menu-button">
+        <label class="btn-menu" for="hmb">
+          <span class="first humburger"></span>
+          <span class="second humburger"></span>
+          <span class="third humburger"></span>
+          <span class="back">НАЗАД</span>
+        </label>
+        <ul class="menu_mobile_hidden">
+          <li class="menu_moblie_item">
+            <ul class="menu_lang">
+              <li class ="lang_border up"><img src="img/img_border.png" alt="" /></li>
+              <li class="menu_lang_prefer ru"><img src="img/ru_icon.png" alt="">RU</li>
+              <li class="menu_lang_prefer en"><img src="img/eng_icon.png" alt="">EN</li>
+              <li class ="lang_border down"><img src="img/img_border.png" alt="" /></li>
+            </ul>
+          </li>
+          <li class="menu_mobile_item height"><img src="img/exchange_mob.png" alt=""><a href="#">ОБМЕН ВАЛЮТ</a>
+            <ul class="currency_variants_mob">
+              <li class="variants"><a href="#">Курсы валют</a></li>
+              <li class="variants"><a href="#">Партнерство</a></li>
+              <li class="variants"><a href="#">Бонусы</a></li>
+            </ul>
+          </li>
+          <li class ="lang_border up"><img src="img/img_border.png" alt="" /></li>
+          <li class="menu_mobile_item other_item"><a href="#"><img src="img/deal_ensure_mob.png" alt="" /><span>ГАРАНТИЯ СДЕЛОК</span></a></li>
+          <li class ="lang_border up"><img src="img/img_border.png" alt="" /></li>
+          <li class="menu_mobile_item other_item"><a href="#"><img src="img/service_payment_mob_1.png" alt=""><span>ОПЛАТА СЕРВИСОВ</span></a></li>
+          <li class ="lang_border up"><img src="img/img_border.png" alt="" /></li>
+          <li class="menu_mobile_item other_item"><a href="#"><img src="img/lombard_mob.png" alt="" /><span>ОНЛАЙН ЛОМБАРД</span></a></li>
+          <li class ="lang_border up"><img src="img/img_border.png" alt="" /></li>
+          <li class="menu_mobile_item other_item"><a href="#"><img src="img/knowledge_base_mob.png" alt="" /><span>БАЗА ЗНАНИЙ</span></a></li>
+          <li class ="lang_border up"><img src="img/img_border.png" alt="" /></li>
+          <li class="menu_mobile_settings"><a href="#">НАСТРОЙКИ <span class="arrow_mob">></span></a></li>
+          <li class="menu_mobile_settings"><a href="#">ПОДДЕРЖКА <span class="arrow_mob">></span></a></li>
+          <li class="menu_mobile_settings">
+            <form action="GET" class="exit_button">
+              <button type="button" name="button">
+                ВЫХОД<span class="arrow_mob">></span>
+              </button>
+            </form>
+            </li>
+        </ul>
+      </nav>
+      <nav class="menu-desktop">
+        <ul class="menu-bar">
+          <li class="menu-bar_item"><a href="#"><img src="img/exchange.png" alt="" /><p>
+    ОБМЕН ВАЛЮТ
+          </p><p><img src="img/border_.png" alt=""/></p></a></li>
+          <li class="menu-bar_item"><a href="#"><img src="img/deal_ensure.png" alt="" /><p>
+    ГАРАНТ СДЕЛОК
+          </p><p><img src="img/border_.png" alt=""/></p></a></li>
+          <li class="menu-bar_item"><a href="#"><img src="img/service_payment.png" alt="" /><p>
+    ОПЛАТА СЕРВИСОВ
+          </p><p><img src="img/border_.png" alt=""/></p></a></li>
+          <li class="menu-bar_item"><a href="#"><img src="img/lombard.png" alt="" /><p>
+    ОНЛАЙН ЛОМБАРД
+          </p><p><img src="img/border_.png" alt=""/></p></a></li>
+          <li class="menu-bar_item"><a href="#"><img src="img/knowledge_base.png" alt="" /><p>
+    БАЗА ЗНАНИЙ
+          </p><p><img src="img/border_.png" alt=""/></p></a></li>
+        </ul>
+      </nav>
+      <section class="currency_exch">
+        <img class ="lang_border" src="img/img_border.png" alt="" />
+        <h2 class="currency_heading">Автоматический обмен электронных валют</h2>
+        <img class = "currency_exch_border_upper" src="img/currency_exch_border_upper.png" alt="">
+        <form action="POST" class="currency_exchage_options">
+          <div class="giver">
+              <div class="give">
+                <span class="give_out">отдаете</span>
+                <input type="text" placeholder="0,00........">
+              </div>
+              <div class="currency_givers">
+                <p class="current_default_choice"><a href=""><img src="img/pm_icon.png" alt=""><img src="img/arrow_expand.png" alt="" /></a></p>
+                <ul class="currency_giver_list">
+                  <li class="currency_giver_option"><a href="#"><img src="img/pm_icon.png" alt=""><p>Perfect money</p></a></li>
+                  <li class="currency_giver_option option_for_desktop"><a href="#"><img src="img/yandex_m_icon.png" alt=""><p>Яндекс.Деньги</p></a></li>
+                  <li class="currency_giver_option paymer"><a href="#"><img src="img/paymer_icon.png" alt=""><p>Paymer</p></a></li>
+                  <li class="currency_giver_option"><a href="#"><img src="img/btc_icon.png" alt=""><p>BTC-e</p></a></li>
+                  <li class="currency_giver_option option_for_desktop"><a href="#"><img src="img/qiwi_icon.png" alt=""><p>Qiwi</p></a></li>
+                  <li class="currency_giver_option"><a href="#"><img src="img/privat24_icon.png" alt=""><p>Приват 24</p></a></li>
+                  <li class="currency_giver_option"><a href="#"><img src="img/okpay_icon.png" alt=""><p>Okpay</p></a></li>
+                  <li class="currency_giver_option option_for_desktop"><a href="#"><img src="img/egopay_icon.png" alt=""><p>Egopay</p></a></li>
+                  <li class="currency_giver_option"><a href="#"><img src="img/z_icon.png" alt=""><p>Z-payment</p></a></li>
+                  <li class="currency_giver_option option_for_desktop"><a href="#"><img src="img/w1_icon.png" alt=""><p>W1</p></a></li>
+                  <li class="currency_giver_option option_for_desktop"><a href="#"><img src="img/visa_mc_icon.png" alt=""><p>Visa/MC</p></a></li>
+                  <li class="currency_giver_option option_for_desktop"><a href="#"><img src="img/anycash_icon.png" alt=""><p>Anycash</p></a></li>
+                </ul>
+              </div>
+              <div class="currency_type_list">
+                <ul class="currency_type">
+                  <li class="currency_type_name usd"><a href="#"><span>USD</span><img class="currency_type_expander" src="img/arrow_expand.png" alt="" /></a></li>
+                  <li class="currency_type_name uah"><a href="#">UAH</a></li>
+                  <li class="currency_type_name rub"><a href="#">RUB</a></li>
+                </ul>
+              </div>
+              <span class="border_bottom_elem"></span>
+            </div>
+            <div class="receiver">
+              <div class="receive">
+                <span class="reception">получаете</span>
+                <input type="text" placeholder="0,00........">
+              </div>
+              <div class="currency_receivers">
+                <p class="current_default_choice"><a href=""><img src="img/privat.png" alt=""><img src="img/arrow_expand.png" alt="" /></a></p>
+                <ul class="currency_receiver_list">
+                  <li class="currency_receiver_option"><a href="#"><img src="img/pm_icon.png" alt="">Perfect money</a></li>
+                  <li class="currency_receiver_option"><a href="#"><img src="img/yandex_m_icon.png" alt="">Яндекс.Деньги</a></li>
+                  <li class="currency_receiver_option"><a href="#"><img src="img/paymer_icon.png" alt="">Paymer</a></li>
+                  <li class="currency_receiver_option"><a href="#"><img src="img/btc_icon.png" alt="">BTC-e</a></li>
+                  <li class="currency_receiver_option"><a href="#"><img src="img/qiwi_icon.png" alt="">Qiwi</a></li>
+                  <li class="currency_receiver_option"><a href="#"><img src="img/privat24_icon.png" alt="">Приват 24</a></li>
+                  <li class="currency_receiver_option"><a href="#"><img src="img/okpay_icon.png" alt="">Okpay</a></li>
+                  <li class="currency_receiver_option"><a href="#"><img src="img/egopay_icon.png" alt="">Egopay</a></li>
+                  <li class="currency_receiver_option"><a href="#"><img src="img/z_icon.png" alt="">Z-payment</a></li>
+                  <li class="currency_receiver_option"><a href="#"><img src="img/w1_icon.png" alt="">W1</a></li>
+                  <li class="currency_receiver_option"><a href="#"><img src="img/visa_mc_icon.png" alt="">Visa/MC</a></li>
+                  <li class="currency_receiver_option"><a href="#"><img src="img/anycash_icon.png" alt="">Anycash</a></li>
+                </ul>
+              </div>
+              <div class="currency_type_list">
+                <ul class="currency_type">
+                  <li class="currency_type_name usd"><a href="#">USD<img src="img/arrow_expand.png" alt="" /></a></li>
+                  <li class="currency_type_name uah"><a href="#">UAH</a></li>
+                  <li class="currency_type_name rub"><a href="#">RUB</a></li>
+                </ul>
+              </div>
+              <span class="border_bottom_elem"></span>
+            </div>
+            <div class="exchange_button">
+              <button type="button">ОБМЕНЯТЬ ВАЛЮТУ</button>
+            </div>
+      </form>
+        <div class="currency_privat"><img src="img/privat.png" alt=""><span class="privat">Приват 24</span><br> доступно для обмена <span class="currency_available">114,09 UAH</span></div>
+        <div class="separator">---------------</div>
+        <div class="currency_in_need"><a href="#">Мне нужно больше - сообщите, когда появится<img src="img/envelope.png" alt=""></a></div>
+      </section>
+      <div class="bonuses-partners">
+        <div class="partners_line"><img src="img/partners_line.png" alt=""></div>
+        <div class="currency_rates"><a href="#"><img src="img/exchange_rate.png" alt="">КУРСЫ ВАЛЮТ</a></div>
+        <div class="partners"><a href="#"> <img src="img/partners.png" alt="">ПАРТНЕРСТВО</a></div>
+        <div class="bonuses"><a href="#"><img src="img/bonuses.png" alt="">БОНУСЫ</a></div>
+      </div>
+      <img class = "currency_exch_border_bottom" src="img/currency_exch_border_bottom.png" alt="">
+    </header>
+    <div class="news_and_knowledge">
+      <section class="news">
+        <img src="img/border_.png" alt="" class="news_border_heading">
+        <h3 class="news_heading">Новости проекта</h3>
+        <img src="img/news.png" alt="" class="news_cover">
+        <p class="news_text">
+          Вдруг это какая-то новая разновидность баобаба? Но кустик быстро перстал тянуться ввысь, и на нем появился бутон. Маленький принц никогда еще не видел таких еще не видел таких огромных бутонов.
+        </p>
+        <a href=""><span class="more more-news">Далее &gt;&gt;</span></a>
+        <div class="arrow left"><a href="">&lt;</a></div>
+        <div class="arrow right"><a href="#">&gt;</a></div>
+      </section>
+      <section class="knowledge">
+        <img src="img/border_.png" alt="" class="knowledge_border_heading">
+        <h3 class="knowledge_heading">База знаний</h3>
+        <img src="img/knowledge.png" alt="" class="knowledge_cover">
+      <p class="knowledge_text">Вдруг это какая-то новая разновидность баобаба? Но кустик быстро перстал тянуться ввысь, и на нем появился бутон. Маленький принц никогда еще не видел таких еще не видел таких огромных бутонов.
+      </p>
+      <a href=""><span class="more more-knowledge">Далее&gt;&gt;</span></a>
+      <div class="arrow left"><a href="">&lt;</a></div>
+      <div class="arrow right"><a href="#">&gt;</a></div>
+    </section>
+    </div>
+    <section class="exchange_direction">
+      <img src="img/border.png" alt="" class="direction_border_upper">
+      <h2 class="exch_dir_heading_desk">Наши направления обмена с:</h2>
+      <div class="directions">
+        <div class="directions_map">
+          <img src="img/directions_map.png" alt="">
+        </div>
+        <div class="exch_dir_heading"><span class="exch_dir_heading_2">Наши направления обмена<span class="heading_expand"><a href="">&gt;&gt;</a></span></span>
+          <ul class="directions_list">
+            <li class="direction_item w1"><a href="#">W <span>1</span></a></li>
+            <li class="direction_item perfect_m"><a href="#">Perfect Money</a></li>
+            <li class="direction_item btc-e"><a href="#">BTC-E</a></li>
+            <li class="direction_item exmo"><a href="#">EXMO</a></li>
+            <li class="direction_item payeer"><a href="#">Payeer</a></li>
+            <li class="direction_item litecoin"><a href="#">Litecoin</a></li>
+            <li class="direction_item qiwi"><a href="#">QIWI</a></li>
+            <li class="direction_item paymer"><a href="#">Paymer</a></li>
+            <li class="direction_item bitcoin"><a href="#">Bitcoin</a></li>
+            <li class="direction_item yandex_m"><a href="#">Яндекс.Деньги</a></li>
+            <li class="direction_item adv_cash"><a href="#">AdvCash</a></li>
+            <li class="direction_item privat_bank"><a href="#">Приват<span>24</span></a></li>
+            <li class="direction_item ok_pay"><a href="#">OK PAY</a></li>
+            <li class="direction_item web_money"><a href="#">WebMoney</a></li>
+          </ul>
+        </div>
+        <img src="img/border.png" alt="" class="direction_border_bottom">
+      </div>
+    </section>
+    <section class="how_it_works">
+      <h2 class="how_it_works_heading">КАК ЭТО РАБОТАЕТ?</h2>
+      <div class="how_container">
+        <div class="how_paragraph">
+          <p class="paragraph_padding">
+            Если вы думаете. что ширина текстовой колонки в вашем блоге это забота вашего веб-дизайнера, то ошибаетесь. Существует оптимальная ширина текстовой колонки блога, и я скажу вам какова она и почему. Нол для начала давайте поговорим о том, какова первая задача, стоящая перед вашим веб-сайтом. Первейшая задача состоит в том, чтобы оюди прочли несколько начальных предложений вашего текста.
+          </p>
+          <p>
+            Специалисты - копирайтеры. такие как Джо Шугарман (Joe Sugarman), давно знают об этом инересном аспекте читательского поведения, теперь об этом узнаете и вы.
+            Если Вам удалось сделать так, чтобы потребитель прочел несколько первых предложений статьи на вашем сайте или вашего коммерческого предложения, он с гараздо большей вероятностью дочитает их до конца.
+          </p>
+          <p>
+            Проблема состоит в том, что заставить потребителя прочесть эти первые несколько предложений весьма сложно. Помните, что когда люди заходят на ваш сайт, у вас есть несколько всего секунд, чтобы заинтересовать их. Если вам это не удалось, вы их потеряете. Вот тут то и вступает в игру оптимальная ширина текстовой колонки. При правильной подаче материала вы можете сделать так, чтобы случайные посетители читали вводные предложения вашего текста до конца, а значит с большей долей вероятности дочитывали до конца.
+          </p>
+        </div>
+        <div class="how_paragraph paragraph_padding_top">
+          <p>
+            Если вы думаете. что ширина текстовой колонки в вашем блоге это забота вашего веб-дизайнера, то ошибаетесь. Существует оптимальная ширина текстовой колонки блога, и я скажу вам какова она и почему. Нол для начала давайте поговорим о том, какова первая задача, стоящая перед вашим веб-сайтом. Первейшая задача состоит в том, чтобы оюди прочли несколько начальных предложений вашего текста.
+          </p>
+          <p>
+            Специалисты - копирайтеры. такие как Джо Шугарман (Joe Sugarman), давно знают об этом инересном аспекте читательского поведения, теперь об этом узнаете и вы.
+            Если Вам удалось сделать так, чтобы потребитель прочел несколько первых предложений статьи на вашем сайте или вашего коммерческого предложения, он с гараздо большей вероятностью дочитает их до конца.
+          </p>
+          <p class="paragraph_padding_bottom">
+            Проблема состоит в том, что заставить потребителя прочесть эти первые несколько предложений весьма сложно. Помните, что когда люди заходят на ваш сайт, у вас есть несколько всего секунд, чтобы заинтересовать их. Если вам это не удалось, вы их потеряете. Вот тут то и вступает в игру оптимальная ширина текстовой колонки. При правильной подаче материала вы можете сделать так, чтобы случайные посетители читали вводные предложения вашего текста до конца
+          </p>
+        </div>
+      </div>
+    <img class="how_border_bottom" src="img/img_border.png" alt="">
+    </section>
+    <div class="share_us"><p>ПОДЕЛИТЬСЯ</p>
+      <span class="share vk"><a href=""><img src="img/share_vk.png" alt=""></a></span>
+      <span class="share fb"><a href=""><img src="img/share_fb.png" alt=""></a></span>
+      <span class="share twitter"><a href=""><img src="img/share_twi.png" alt=""></a></span>
+      <span class="share google_plus"><a href=""><img src="img/share_google.png" alt=""></a></span>
+    </div>
+    <div class="tell_about_us">РАССКАЖИТЕ О НАС
+      <span class="tell vk"><a href=""><img src="img/vk_share.png" alt=""></a></span>
+      <span class="tell fb"><a href=""><img src="img/fb_share.png" alt=""></a></span>
+      <span class="tell twitter"><a href=""><img src="img/twi_share.png" alt=""></a></span>
+      <span class="tell google_plus"><a href=""><img src="img/google_share.png" alt=""></a></span>
+    </div>
+    <footer>
+      <img src="img/footer_menu_border.png" alt="" class="footer_border">
+      <nav>
+        <ul class="menu-footer-desktop">
+          <li class="menu-footer_list"><a href="">ПОДДЕРЖКА</a><img src="img/arrow_footer.png" alt="">
+            <ul class="submenu-footer">
+            <li class="submenu-footer_list"><a href="#">Тикеты</a></li>
+            <li class="submenu-footer_list"><a href="#">Вопросы и ответы</a></li>
+            <li class="submenu-footer_list"><a href="#">Инструкция</a></li>
+            <li class="submenu-footer_list"><img src="img/bottom_b _footer.png" alt=""></li>
+          </ul></li>
+          <li class="menu-footer_list"><a href="">ПРОЕКТЫ</a><img src="img/arrow_footer.png" alt="">
+            <ul class="submenu-footer">
+            <li class="submenu-footer_list"><a href="#">Обмен валют</a></li>
+            <li class="submenu-footer_list"><a href="#">Гарант сделок</a></li>
+            <li class="submenu-footer_list"><a href="#">Оплата сервисов</a></li>
+            <li class="submenu-footer_list"><a href="#">Онлайн ломбард</a></li>
+            <li class="submenu-footer_list"><a href="#">База знаний</a></li>
+            <li class="submenu-footer_list"><img src="img/bottom_b _footer.png" alt=""></li>
+          </ul></li>
+          <li class="menu-footer_list"><a href="">КЛИЕНТАМ</a><img src="img/arrow_footer.png" alt="">
+            <ul class="submenu-footer">
+            <li class="submenu-footer_list"><a href="#">Депозитная программа</a></li>
+            <li class="submenu-footer_list"><a href="#">Партнерство</a></li>
+            <li class="submenu-footer_list"><a href="#">Бонусная система</a></li>
+            <li class="submenu-footer_list"><img src="img/bottom_b _footer.png" alt=""></li>
+          </ul></li>
+          <li class="menu-footer_list"><a href="">УСЛОВИЯ</a><img src="img/arrow_footer.png" alt="">
+            <ul class="submenu-footer">
+            <li class="submenu-footer_list"><a href="#">Безопасность</a></li>
+            <li class="submenu-footer_list"><a href="#">Соглашение</a></li>
+            <li class="submenu-footer_list"><a href="#">Гарантии</a></li>
+            <li class="submenu-footer_list"><img src="img/bottom_b _footer.png" alt=""></li>
+          </ul></li>
+          <li class="menu-footer_list"><a href="">КОНТАКТЫ</a><img src="img/arrow_footer.png" alt="">
+            <ul class="submenu-footer">
+            <li class="submenu-footer_list"><a href="#">office@any.cash</a></li>
+            <li class="submenu-footer_list"><a href="#">+380504345568</a></li>
+            <li class="submenu-footer_list"><img src="img/bottom_b _footer.png" alt=""></li>
+          </ul></li>
+          <li class="menu-footer_list"><img src="img/arrow_footer.png" alt="">
+            <ul class="submenu-footer footer-networks">
+            <li class="submenu-footer_list"><a href="#"><img src="img/vk_nav.png" alt="" /></a></li>
+            <li class="submenu-footer_list"><a href="#"><img src="img/fb_nav.png" alt="" /></a></li>
+            <li class="submenu-footer_list"><a href="#"><img src="img/twi_nav.png" alt="" /></a></li>
+            <li class="submenu-footer_list"><a href="#"><img src="img/google_nav.png" alt="" /></a></li>
+          </ul></li>
+        </ul>
+        <div class="menu-footer-mob">
+          <div class="support_and_conditions"><span class="support">Поддержка</span><img src="img/arrow_footer.png" alt=""><span class="conditions">Условия</span></div>
+          <div class="submenu_container">
+            <ul class="submenu-mob mob_support">
+              <li class="submenu-mob_list"><a href="#">Тикеты</a></li>
+              <li class="submenu-mob_list"><a href="#">Вопросы и ответы</a></li>
+              <li class="submenu-mob_list"><a href="#">Инструкция</a></li>
+            </ul>
+            <ul class="submenu-mob mob_conditions">
+              <li class="submenu-mob_list"><a href="#">Безопасность</a></li>
+              <li class="submenu-mob_list"><a href="#">Соглашение</a></li>
+              <li class="submenu-mob_list"><a href="#">Гарантии</a></li>
+            </ul>
+          </div>
+          <div class="projects_and_networks"><span class="projects">Проекты</span><img src="img/arrow_footer.png" alt=""><span class="networks">Соцсети</span></div>
+          <div class="submenu_container">
+            <ul class="submenu-mob mob_projects">
+              <li class="submenu-mob_list"><a href="#">Платежная система</a></li>
+              <li class="submenu-mob_list"><a href="#">Обмен валют</a></li>
+              <li class="submenu-mob_list"><a href="#">Гарант сделок</a></li>
+              <li class="submenu-mob_list"><a href="#">Оплата сервисов</a></li>
+              <li class="submenu-mob_list"><a href="#">Депозиты</a></li>
+            </ul>
+            <ul class="submenu-mob mob_networks">
+              <li class="submenu-mob_list"><a href="#">Facebook</a></li>
+              <li class="submenu-mob_list"><a href="#">Twitter</a></li>
+              <li class="submenu-mob_list"><a href="#">Vkontakte</a></li>
+              <li class="submenu-mob_list"><a href="#">Google</a></li>
+            </ul>
+          </div>
+          <div class="contacts"><img src="img/arrow_footer.png" alt="" class="contact_arrow_left"><span>Контакты</span><img src="img/arrow_footer.png" alt="" class="contact_arrow_right"></div>
+            <ul class="submenu-mob mob_contacts">
+              <li class="submenu-mob_list"><a href="#">office@any.cash</a></li>
+              <li class="submenu-mob_list"><a href="#">+380504345568</a></li>
+            </ul>
+        </div>
+      </nav>
+    </footer>
+  </div>
+</body>
+</html>
