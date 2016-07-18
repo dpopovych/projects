@@ -4,6 +4,8 @@
   border: 1px solid $grey4;
   & li {
     list-style: none;
+    list-style-image: none;
+    list-style-type: none;
   }
   & a {
     font-size: 14px;
@@ -55,7 +57,7 @@
     padding: 55px 10px 10px 10px;
     margin: 0 auto;
     box-sizing: border-box;
-    width: 304px;
+    width: 320px;
     background-color: $white;
     height: 770px;
     top: -25px;
@@ -86,7 +88,7 @@
   }
   .menu_lang {
     list-style: none;
-    padding: 0 45px;
+    padding: 0 65px;
     position: relative;
     .menu_lang_prefer {
       margin: 20px 15px;
@@ -236,7 +238,10 @@
       font-size: 18px;
       font-weight: normal;
       font-family: 'Open Sans';
-      margin: 0 0 0 130px;
+      margin: 0 0 0 150px;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 
@@ -259,6 +264,7 @@
     width: 304px;
     position: absolute;
     top: 13px;
+    left: 7px;
 
   }
   .currency_heading{
@@ -344,6 +350,7 @@
       display: none;
     }
   }
+
   .currency_givers:hover {
     border: 2px solid $blue3;
     -webkit-box-shadow: 0px -2px 29px -5px rgba(141,141,141,1);
@@ -371,7 +378,6 @@
       li {
         float: left;
         list-style: none;
-        border: 1px dotted $grey1;
       }
       a {
         display: block;
@@ -554,7 +560,7 @@
   width: 304px;
   position: absolute;
   top: 562px;
-  left: 0;
+  left: 7px;
 }
 .news {
   margin-top: 50px;
@@ -719,7 +725,7 @@
       padding-top: 35px;
     }
     & .paragraph_padding_bottom {
-      padding-bottom: 15px;
+      padding-bottom: 10px;
     }
     p {
       display: block;
@@ -752,6 +758,9 @@
   }
 }
 footer {
+  .footer_border {
+    display: none;
+  }
   .menu-footer-desktop {
     display: none;
   }

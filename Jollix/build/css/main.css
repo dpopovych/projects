@@ -456,6 +456,8 @@ textarea {
 
 .wrapper li {
   list-style: none;
+  list-style-image: none;
+  list-style-type: none;
 }
 
 .wrapper a {
@@ -519,7 +521,7 @@ textarea {
   padding: 55px 10px 10px 10px;
   margin: 0 auto;
   box-sizing: border-box;
-  width: 304px;
+  width: 320px;
   background-color: #fff;
   height: 770px;
   top: -25px;
@@ -556,7 +558,7 @@ textarea {
 
 .wrapper .menu_lang {
   list-style: none;
-  padding: 0 45px;
+  padding: 0 65px;
   position: relative;
 }
 
@@ -734,7 +736,11 @@ textarea {
   font-size: 18px;
   font-weight: normal;
   font-family: 'Open Sans';
-  margin: 0 0 0 130px;
+  margin: 0 0 0 150px;
+}
+
+.wrapper .menu_mobile_settings .exit_button button:hover {
+  cursor: pointer;
 }
 
 .wrapper .menu-desktop {
@@ -759,6 +765,7 @@ textarea {
   width: 304px;
   position: absolute;
   top: 13px;
+  left: 7px;
 }
 
 .wrapper .currency_exch .currency_heading {
@@ -884,7 +891,6 @@ textarea {
 .wrapper .currency_exch .currency_givers:hover .currency_giver_list li {
   float: left;
   list-style: none;
-  border: 1px dotted #666;
 }
 
 .wrapper .currency_exch .currency_givers:hover .currency_giver_list a {
@@ -1093,7 +1099,7 @@ textarea {
   width: 304px;
   position: absolute;
   top: 562px;
-  left: 0;
+  left: 7px;
 }
 
 .wrapper .news, .wrapper .knowledge {
@@ -1273,7 +1279,7 @@ textarea {
 }
 
 .wrapper .how_it_works .how_paragraph .paragraph_padding_bottom {
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 
 .wrapper .how_it_works .how_paragraph p {
@@ -1305,6 +1311,10 @@ textarea {
 .wrapper .share_us .share {
   display: inline-block;
   margin: 5px 20px 50px;
+}
+
+.wrapper footer .footer_border {
+  display: none;
 }
 
 .wrapper footer .menu-footer-desktop {
@@ -1499,8 +1509,12 @@ textarea {
     width: 100%;
     background-color: #1469eb;
   }
+  .wrapper .upper-bar .tools .tools-support .tools_support_item:hover .tools_support_sublist .tools_support_subitem:hover .tools_support_sublist {
+    z-index: 10;
+  }
   .wrapper .upper-bar .tools .tools-support .tools_support_item:hover .tools_support_sublist .tools_support_subitem:hover a {
     color: #fff;
+    z-index: 50;
   }
   .wrapper .upper-bar .tools .tools-settings {
     float: left;
@@ -1562,7 +1576,7 @@ textarea {
   }
   .wrapper .menu-desktop .menu-bar .menu-bar_item {
     display: inline-block;
-    margin: 40px 25px;
+    margin: 40px 24px;
     text-align: center;
   }
   .wrapper .currency_exch {
@@ -1618,7 +1632,7 @@ textarea {
     border: 1px solid #7da3ef;
   }
   .wrapper .currency_exch .currency_exchage_options .currency_givers:hover .currency_giver_list .currency_giver_option {
-    width: 148px;
+    width: 150px;
   }
   .wrapper .currency_exch .currency_exchage_options .currency_givers:hover .currency_giver_list .option_for_desktop {
     display: block;

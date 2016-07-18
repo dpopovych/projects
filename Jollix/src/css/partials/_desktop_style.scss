@@ -98,8 +98,12 @@
                 .tools_support_subitem:hover {
                   width: 100%;
                   background-color: $blue3;
+                  .tools_support_sublist {
+                    z-index: 10;
+                  }
                   a {
                     color: $white;
+                    z-index: 50;
                   }
                 }
               }
@@ -166,7 +170,7 @@
         margin: 0 55px;
         .menu-bar_item {
           display: inline-block;
-          margin: 40px 25px;
+          margin: 40px 24px;
           text-align: center;
         }
       }
@@ -226,7 +230,7 @@
             width: 450px;
             border: 1px solid $blue2;
             .currency_giver_option {
-              width: 148px;
+              width: 150px;
             }
             .option_for_desktop {
               display: block;
